@@ -181,6 +181,7 @@
 
 .graph {
   width: 70.9%;
+ 
   
 }
 
@@ -191,7 +192,7 @@
 .mainPics img {
   width: 100%;
   height: auto;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
  
 }
@@ -232,7 +233,7 @@
   }
   .graph {
     position: relative; /* Для правильного позиционирования фона */
-    background-image: url('./graphmob.png');
+    background-image: url('/graphmob.png');
     background-size: contain; /* Покрытие всего элемента фоном */
     background-position: center; /* Центрирование фона */
     background-repeat: no-repeat; /* Запрещаем повторение фона */
