@@ -1,0 +1,49 @@
+/* SendTransaction.module.css */
+
+.send-transaction-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: LT Wave;
+  align-items: center;
+  padding: 20px;
+}
+
+.send-transaction-form input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  background-color: #1a1a1a;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.send-transaction-form input:focus {
+  border-color: #ffcc00;
+  outline: none;
+  background-color: #333;
+}
+
+.send-transaction-form button {
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  padding: 12px 20px;
+  font-family: LT Wave;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.send-transaction-form button:hover {
+  background-color: #e6b800;
+}
+
+.send-transaction-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

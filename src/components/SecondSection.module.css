@@ -1,0 +1,322 @@
+
+
+.headerblock1Main {
+  display: flex;
+  flex-direction: column;
+  width: 94%;
+  margin: 0 auto;
+  padding: 0% 3%;
+  box-sizing: border-box;
+  margin-bottom: 3vh;
+}
+
+.headerBlock1 {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+  white-space: nowrap;
+  gap: 2vw; /* Добавляем расстояние между блоками */
+  box-sizing: border-box;
+}
+
+.headerblock1Text {
+  font-family: 'LT Wave', sans-serif;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  opacity: 1;
+  transition: opacity 0.5s ease; /* Плавное появление */
+}
+
+.tablesmain{
+  display: flex;
+  flex-direction: column;
+  width:90%;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 3%;
+  box-sizing: border-box;
+  margin-bottom: 5vh;
+
+}
+
+.first {
+  font-size: clamp(50px, 5vw, 80px); /* Адаптивный размер шрифта */
+  color:#000;
+  font-weight: 300;
+  line-height: 1.2;
+  max-width: 457px; /* Максимальная ширина для первой части */
+}
+
+.second {
+  font-size: clamp(32px, 5vw, 80px);
+  color:#000;
+  font-weight: 700;
+  line-height: 1.2;
+  max-width: 573px; /* Максимальная ширина для второй части */
+}
+
+.third {
+  font-size: clamp(36px, 7vw, 100px); /* Адаптивный размер шрифта */
+  font-weight: 900;
+  font-style: italic;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1779px; /* Максимальная ширина для третьей части */
+  z-index: -1; /* Этот блок будет на заднем плане */
+  color: #FFC335; /* Цвет фона для третьего элемента */
+  margin-top: -1.2vh;
+}
+
+.circleIcon svg{
+  width: clamp(26px, 2vw, 32px); 
+  height:auto
+}
+
+.elementIcon svg{
+  width: clamp(20px, 2vw, 32px); 
+}
+
+.block1Element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid black;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 15px;
+  height:clamp(32px, 5.2vh, 55px); 
+  box-sizing: border-box;
+  margin: 0 auto; /* Центрирование по горизонтали */
+}
+
+.block1LeftSection h2 {
+  display: flex;
+  color: #333;
+  font-family: LT Wave;
+  font-size: clamp(18px, 1.67vw, 40px);
+  font-weight: 500;
+}
+
+/* Левая секция с иконкой и текстом */
+.block1LeftSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+ 
+
+}
+
+/* Правая секция с кнопками */
+.block1RightSection {
+  display: flex;
+  gap: 8px;
+  
+}
+
+.backdiv {
+  display: flex;
+  flex-direction: column;
+  max-width:1396px;
+  width:94%;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 3%;
+  gap: 1vh;
+  box-sizing: border-box;
+  margin-bottom: 20px; /* Отступ снизу, чтобы отделить от контента */
+}
+.yellowRectangle {
+  background-image: url('/section2back.png'); /* Без 'public' */
+  height: clamp(253px, 64vh, 564px);
+  background-position: center; /* Центрирование изображения */
+  display: flex;
+  height: 0;
+  width: 100%;
+  padding-top: 40.4%; /* для изображения 1396x564 */
+  background-size: contain;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+}
+
+
+
+.tableFeatures {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: clamp(280px, 94%, 1130px); /* Минимальная ширина 280px, адаптивная, максимальная 1200px */
+  height: clamp(250px, 87%, 392px); /* Минимальная высота 250px, адаптивная, максимальная 450px */
+  border-radius: 15px;
+  border: 3px solid #000;
+  opacity: 1;
+  margin-top: -3.2vh;
+  overflow: hidden;
+}
+
+.tableHeader {
+  display: flex; /* Используем Flexbox */
+  justify-content: space-between; /* Элементы по краям */
+  align-items: center; /* Вертикальное центрирование */
+  padding: 0% 12px; /* Отступы сверху и по бокам */
+  background-color: #fff; /* Белый фон */
+  border-bottom: 15px solid #000; /* Полоска снизу */
+}
+
+
+
+.tableTitle {
+  /* Memecoin */
+  font-family: 'LT Wave';
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(20px, 1.67vw, 40px);
+  text-align: center;
+  color: #000000;
+}
+
+.plusIcon svg {
+  align-items: center;
+  width: clamp(17px, 1.7vw, 32px); 
+}
+
+.dotsIcon svg {
+  align-items: center;
+  height: 2.2vh;
+  width: clamp(18px, 1.3vw, 32px); 
+}
+
+.tableIcon svg {
+  align-items: center;
+  width: clamp(22px, 1.7vw, 32px); 
+  margin-left: 0.5vw;
+}
+
+
+.tableContentFeatures {
+  background-color: #fff; /* Фон белый */
+  display: flex; /* Flexbox для центрирования */
+  flex-direction: column; /* Вертикальное направление */
+  justify-content: center; /* Центрирование по вертикали */
+  align-items: center; /* Центрирование по горизонтали */
+  text-align: center; /* Центрирование текста */
+  padding: 3% 8%;
+  box-sizing: border-box; /* Учитывать padding в ширине */
+}
+
+/* Содержимое окна */
+.tableContent {
+  background-color: #fff; /* Фон белый */
+  display: flex; /* Flexbox для центрирования */
+  flex-direction: column; /* Вертикальное направление */
+  justify-content: center; /* Центрирование по вертикали */
+  align-items: center; /* Центрирование по горизонтали */
+  box-sizing: border-box; /* Учитывать padding в ширине */
+  font-family: LT Wave;
+  color:black;
+  font-size: clamp(17px, 1.35vw, 30px);
+  font-weight: 300;
+  text-align: left;
+  padding: 0 2%;
+}
+
+.titleIn {
+  font-family: LT Wave;
+  font-size: clamp(40px, 4.167vw, 100px);
+  font-weight: 500;
+  color: black;
+}
+
+.tableContentFeatures  {
+  font-family: LT Wave;
+  font-size: clamp(17px, 1.35vw, 30px);
+  font-weight: 300;
+  color:black;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+
+/* Базовый контейнер */
+.memstakingMain {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 94%; /* Ширина контейнера */
+  box-sizing: border-box;
+  margin-top: -3.2vh;
+  margin-left: 6.2vw;
+  margin-bottom: 20px; 
+}
+
+/* Блок memecoins */
+.tableMemecoins {
+   width: clamp(372px, 94%, 850px); /* Минимальная ширина 280px, адаптивная, максимальная 1200px */
+  height: clamp(273px, 87%, 294px);
+  border: 3px solid #000;
+  border-radius: 15px;
+  overflow: hidden;
+  
+  
+}
+
+/* Блок staking */
+.tableStaking {
+  width: clamp(336px, 100%, 553px);
+  height: clamp(105px,100%, 336px);  /* Пример использования clamp */
+  border: 3px solid #000;
+  border-radius: 15px;
+  overflow: hidden; 
+  margin-top: -1.5vh;
+  margin-left: -2.2vw;
+  position: relative;
+  z-index: 1;
+}
+
+/* Общий контейнер окна */
+.tableIntegration {
+  margin: 0 auto;
+  width: clamp(318px, 94%, 710px);
+  height: clamp(135px,15vh, 249px);
+  border: 3px solid #000;
+  border-radius: 15px; /* Закругленные углы */
+  overflow: hidden; /* Скрытие лишнего содержимого */
+  position: relative;
+  margin-top: -3vh;
+  text-align: left;
+  margin-bottom: 5vh;
+}
+
+@media (max-width: 768px) {
+
+  .memstakingMain {
+    flex-direction: column;
+  }
+  .yellowRectangle {
+    background-image: url('/section2backMob.png'); /* Без 'public' */
+    height: 98px;
+    background-position: center; /* Центрирование изображения */
+    display: flex;
+    width: 100%;
+    background-size: contain;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    
+  
+  }
+
+.tableMemecoins, .tableStaking {
+  width: 100%; /* Каждая секция будет занимать 100% ширины */
+}
+.tableIntegration {
+
+  margin-bottom: 2vh;
+}
+
+}

@@ -1,0 +1,217 @@
+.svg-container {
+    position: relative;
+    width: 88%;
+    box-sizing: border-box;
+    max-width: 1680px; /* Максимальная ширина блока */
+    margin: 0% auto; /* Центрирование на странице */
+    margin-bottom: 5vh;
+
+  }
+  
+  .svg-container svg {
+    display: block;
+    width: 100%; /* SVG подстраивается под размер контейнера */
+    height: auto; /* Сохраняет пропорции */
+  
+  
+  }
+  
+  .titles {
+    position: absolute;
+    top: 50%; /* Расположение по вертикали */
+    left: 50%; /* Расположение по горизонтали */
+    transform: translate(-50%, -50%); /* Центрирование */
+    text-align: center; /* Центрирование текста */
+    line-height: 1; /* Убираем лишние расстояния между заголовками */
+  }
+  
+  .title-large {
+    font-family: 'LT Wave', sans-serif;
+    font-weight: 500;
+    font-size: clamp(36px, 10.42vw, 200px); /* Адаптивный размер текста */
+    color: #FFC33E; /* Жёлтый цвет */
+    line-height: 0.8; /* Регулировка расстояния между линиями */
+  }
+  
+  .title-small {
+    font-family: 'LT Wave', sans-serif;
+    font-weight: 500;
+    font-size: clamp(36px, 4.17vw, 80px); /* Адаптивный размер текста */
+    color: #000000; /* Чёрный цвет */
+    line-height: 0.8; /* Регулировка расстояния между линиями */
+  }
+  
+  /* Контейнер для двух прямоугольников */
+  .rectangles-container {
+    display: flex;
+    justify-content: space-between;
+    width: 94%;
+    margin: 0 auto;
+    padding: 0 3%;
+    gap: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Отступ снизу, чтобы отделить от контента */
+  }
+  
+  /* Прямоугольники */
+  .rectangle {
+    width: 50%;
+    
+    height: 55px;
+    background: #000000;
+    border: 3px solid #000000;
+    border-radius: 15px;
+    box-sizing: border-box;
+    
+  }
+  
+  .rectangle .text {
+    font-family: 'LT Wave', sans-serif;
+    font-size: clamp(16px, 2vw, 32px);
+  
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .megawrap{
+    display:flex;
+    justify-content: space-between;
+    width: 94%;
+    margin: 0 auto;
+    padding: 0 3%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin-bottom: 20px; 
+    
+  }
+  
+  .superwrap {
+  width:67%;
+  
+     
+  }
+  
+  .wrap-main {
+    display:flex;
+    gap:1vw;
+ 
+    
+    
+    
+  }
+  
+  .wrap-row {
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    width:100%;
+    gap:1vw;
+    
+  }
+  .staking-title {
+    font-family: 'LT Wave', sans-serif;
+    font-weight: 500;
+    font-size: clamp(26px, 1.67vw, 40px); 
+    color: #000000;
+    margin: 0;
+    white-space: nowrap;
+    
+  
+  }
+  
+  .staking-line {
+    width: 100%; /* Ширина линии */
+    height: 2px; /* Высота линии */
+    background-color: #000; /* Цвет линии */
+    
+  }
+  
+  .amount{
+     font-family: 'LT Wave', sans-serif;
+    font-weight: 300;
+    font-size: clamp(17px, 1.67vw, 26px);
+    color: #000000;
+  }
+  .percentage {
+    font-family: 'LT Wave', sans-serif;
+    font-weight: 500;
+    font-size: clamp(26px, 1.67vw, 40px); 
+  }
+  
+  .staking-subtext {
+    font-family: 'LT Wave', sans-serif;
+    font-weight: 300;
+    font-size: clamp(17px, 2vw, 26px);
+    color: #000000;
+    line-height: 1;
+    margin: 0;
+  }
+  
+  
+  .right-section {
+    width: 30%;
+    background-image: url('/section3back.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 2vh;
+
+   }
+ 
+  
+  @media (max-width: 768px) {
+    .wrap-row {
+      flex-direction: column;
+      align-items: flex-start; /* Выровнять элементы по левому краю */
+    }
+  
+    .staking-title, .amount {
+      text-align: left; /* Дополнительно выровнять текст */
+      width: 100%; /* Убедиться, что элементы занимают всю ширину */
+    }
+  
+    .staking-line {
+      width: 100%; /* Оставляем ширину линии адаптивной */
+    }
+  
+    .megawrap {
+      flex-direction: column-reverse;
+    }
+    
+    .superwrap {
+      width: 100%;
+    }
+  
+    .right-section {
+      width: 100%;
+      height: 65vh;
+    }
+    .rectangles-container {
+      display: flex;
+      flex-direction: column;
+      width: 94%;
+      margin: 0 auto;
+      padding: 0 3%;
+      gap: 10px;
+      box-sizing: border-box;
+      margin-bottom: 20px; /* Отступ снизу, чтобы отделить от контента */
+    }
+    .rectangle {
+      width: 100%;
+      height: 45px;
+      background: #000000;
+      border: 3px solid #000000;
+      border-radius: 15px;
+      box-sizing: border-box;
+      
+    }
+   
+  }
+
+
+
+

@@ -1,0 +1,61 @@
+.languageSwitcher {
+    position: relative;
+    display: inline-block;
+    font-family: "LT Wave", sans-serif;
+  }
+  
+  .selectedLanguage {
+    background: linear-gradient(90deg, #000, #555);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .selectedLanguage:hover {
+    background: linear-gradient(90deg, #555, #000);
+  }
+  
+  .languageMenu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #000;
+    border: 1px solid #555;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 10;
+    animation: slideDown 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .languageOption {
+    padding: 10px 20px;
+    color: #fff;
+    width: clamp(110px, 5vw,136px) ;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .languageOption:hover {
+    background: #444;
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+    

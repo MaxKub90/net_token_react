@@ -1,0 +1,131 @@
+/* Основной футер */
+.footer {
+  background-color: #000000;
+  color: white;
+  padding: 40px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Контент футера */
+.footerContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 88%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Логотип */
+.footerLogo {
+  flex: 1;
+  text-align: start;
+  margin-bottom: 20px;
+  animation: slideUp 1.2s ease-out;
+}
+
+.footerLogoText {
+  font-size: 40px;
+  font-family: LT Wave;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  animation: textGlow 1s ease-in-out infinite alternate;
+}
+
+/* Анимация для логотипа */
+@keyframes slideUp {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Иконки социальных сетей */
+.footerSocials {
+  display: flex;
+  gap: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.socialIcon {
+  font-size: 28px;
+  color: #ccc;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socialIcon:hover {
+  color: #f7a700;
+  transform: scale(1.2);
+}
+
+/* Нижняя часть футера */
+.footerBottom {
+  text-align: center;
+  margin-top: 20px;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.footerBottom p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Анимация для появления */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+  .footerContent {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footerLogo {
+      margin-bottom: 20px;
+      text-align: center;
+  }
+
+  /* Добавление разделителя между логотипом и соцсетями */
+  .footerSocials {
+      margin-top: 20px;
+      border-top: 1px solid #fff;
+      padding-top: 20px;
+      justify-content: center;
+  }
+
+  .footerSocials .socialIcon {
+      font-size: 30px;
+  }
+
+  /* Для нижней части футера */
+  .footerBottom {
+      margin-top: 30px;
+  }
+}

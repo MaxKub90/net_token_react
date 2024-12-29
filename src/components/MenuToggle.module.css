@@ -1,0 +1,41 @@
+/* Общие стили */
+.toggle {
+  height: 100px;
+  width: 100px;
+  border-radius: 15px;
+  box-shadow: 8px 8px 15px #d2d2d2, -8px -8px 15px #fcfcfc;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.toggle span {
+  width: 50px;
+  height: 5px;
+  border-radius: 5px;
+  background: #000000;
+  box-shadow: 0 15px 0 #000000, 0 -15px 0 #000000;
+  transition: 0.5s;
+  position: relative;
+}
+
+.toggle.active {
+  border-radius: 50%;
+}
+
+.toggle.active span {
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+
+.toggle.active span::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  border-radius: 5px;
+  background: #FFC33E;
+  position: absolute;
+  transform: rotate(90deg);
+}

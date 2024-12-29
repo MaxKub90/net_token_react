@@ -1,0 +1,65 @@
+.faqSection {
+  display: flex;
+  flex-direction: column;
+  width: 94%;
+  margin: 0 auto;
+  padding: 0% 3%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.faqTitle {
+  font-family: "LT Wave", sans-serif;
+  font-size: 80px;
+  font-weight: 500;
+  color: #000;
+}
+
+.faqContainer {
+  border-top: 1px solid #000;
+}
+
+.faqItem {
+  border-bottom: 1px solid #000;
+}
+
+.faqQuestion {
+  display: flex;
+  color: #000;
+  justify-content: space-between;
+  align-items: center;
+  font-size: clamp(24px, 1.67vw, 32px);
+  font-weight: 500;
+  line-height: 44.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding: 15px 0;
+  cursor: pointer;
+  font-family: "LT Wave", sans-serif;
+}
+
+.faqToggle {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.faqAnswer {
+  max-height: 0;
+  overflow: hidden;
+  font-family: "LT Wave", sans-serif;
+  font-size: clamp(20px, 2vw, 26px);
+  font-weight: 300;
+  line-height: 19.82px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #555;
+  padding: 0;
+  transition: all 0.3s ease; /* Добавляет плавное раскрытие */
+}
+
+.faqAnswer.open {
+  max-height: 200px; /* Задай максимальную высоту для открытого ответа */
+  padding: 10px 0 20px 0;
+}

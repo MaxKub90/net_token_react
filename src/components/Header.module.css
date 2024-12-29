@@ -1,0 +1,333 @@
+.header {
+  background-color: rgb(255, 255, 255);
+  height: 120px;
+  padding: 0; /* Убираем padding, чтобы не было отступов */
+  align-content: center;
+  border-bottom: 5px solid black; /* Бордер снизу */
+}
+
+.mainMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0% 3%;
+  box-sizing: border-box;
+}
+
+.navLogo {
+  font-weight: bold;
+  color: black;
+  font-family: LT Wave;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 56px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.navLinks, .menuLinks  {
+  list-style: none;
+  font-family: LT Wave;
+  font-size: clamp(24px, 1.67vw, 40px);
+  font-weight: 300;
+  line-height: 37.31px;
+  text-align: center;
+  margin: 1% auto;
+  flex-wrap: wrap;
+  padding: 0% 3%; /* Добавляет отступы с левых и правых сторон меню */
+  color: inherit; /* Цвет наследуется */
+  cursor: pointer; /* Указатель мыши в виде руки */
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.navLinks li a, .menuLinks li a {
+  text-decoration: none;
+  font-size: clamp(24px, 1.67vw, 40px);
+  color: black;
+  color: inherit; /* Цвет наследуется */
+  cursor: pointer; /* Указатель мыши в виде руки */
+  transition: color 0.3s ease, transform 0.3s ease; /* Плавный переход */
+}
+
+.navLinks li a:hover,
+.menuLinks li a:hover,
+.navLinks li:hover,
+.menuLinks li:hover {
+  color: #ffcc00; /* Желтый цвет при наведении */
+  transform: scale(1.1); /* Легкое увеличение на ховере */
+}
+
+.navWrap {
+  display: flex;
+  gap: 2vw;
+}
+
+.navWrap2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+
+.menuButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.buyNetBtn,
+.langBtn {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-family: LT Wave;
+  font-size: clamp(24px, 1.67vw, 40px);
+  font-weight: 300;
+  line-height: 37.31px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buyNetBtn:hover,
+.langBtn:hover {
+  background-color: #333;
+}
+
+.mobileMenu  {
+  margin: 0;
+  font-family: 'LT Wave', sans-serif;
+  background: #fff;
+  color: #ffffff;
+  display: none;
+  
+}
+
+.menuHeader  {
+  display: flex;
+  width: 88%;
+  margin: 0 auto;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+  
+}
+
+.mobileLogo {
+  font-family: 'LT Wave', sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 56px;
+  text-align: center;
+}
+
+.languageToggle {
+  font-size: 18px;
+  color: #000000;
+  cursor: pointer;
+}
+
+
+
+/* Мобильное меню */
+.menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: -100%; /* Скрываем меню за пределами экрана слева */
+  width: 50%; /* Занимает 2/3 экрана */
+  height: 100%;
+  background: #000;
+  color: #fff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  transition: left 0.3s ease-in-out;
+  padding: 20px;
+  z-index: 1001;
+}
+
+.show {
+  display: flex;
+  left: 0; /* Меню выезжает с левого края */
+  opacity: 1;
+  animation: fadeIn 0,5s ease-in,  opacity 0.3s ease-in-out;
+}
+
+/* Анимация для выезда меню */
+@keyframes slideIn {
+  0% {
+    left: -100%; /* Сначала скрыто за пределами экрана */
+  }
+  100% {
+    left: 0; /* Появляется на экране */
+  }
+}
+
+@keyframes fadeInLetter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.menuTitle {
+  font-size: 3rem;
+  margin-top: 30px;
+  color:white !important;
+  margin-bottom: 20px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.menuLinks {
+  list-style: none;
+  color:white;
+  padding: 0;
+  margin: 20px 0;
+  width: 65%;
+  animation: fadeInLetter 0.5s forwards;
+  animation-delay: 0.3s;
+}
+
+.menuLinks li {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  cursor: pointer;
+  padding-bottom: 5px;
+  animation: fadeInLetter 0.5s forwards;
+  width: 100%;
+  text-align: center;
+
+}
+
+.menuLinks a {
+  display: inline-block;
+  opacity: 0; /* Скрываем изначально */
+  animation: fadeInLetter 0.5s forwards;
+}
+
+.menuLinks a span {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInLetter 0.5s forwards;
+  animation-delay: 0.1s; /* Задержка для анимации каждой буквы */
+}
+
+/* Для всей ссылки задаем задержку, чтобы буквы по очереди появлялись */
+.menuLinks a {
+  opacity: 1;
+  animation-delay: 0.5s;
+}
+
+.languageContainer {
+  position: relative;
+  width: 100%;
+}
+
+.languageToggle {
+  position: absolute;
+  width: 80%;
+  height: 77.94px;
+  left: 50%;
+  top: 0;
+  background: #FFFFFF;
+  border-radius: 22.9249px;
+  font-size: 1.5rem;
+  line-height: 51px;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-50%); /* Центрируем */
+}
+
+.languageOptions {
+  position: absolute;
+  width: 80%;
+  height: 256.76px;
+  left: 50%;
+  top: 77.94px;
+  
+  background: #FFFFFF;
+  border-radius: 22.9249px;
+  display: none;
+  flex-direction: column;
+  padding: 10px 0;
+  transform: translateX(-50%); /* Центрируем */
+}
+
+.languageOption {
+  width: 100%;  /* 100% от родительского элемента */
+  height: 38.97px;
+  padding-left: 20px;
+  font-size: 1.5rem;
+  
+  line-height: 51px;
+  font-weight: 500;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.languageOption:hover {
+  background: #f0f0f0;
+}
+
+.languageOptions.show {
+  display: flex;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* Мобильное меню */
+@media (max-width: 1024px) {
+  .mainMenu {
+    display: none;
+  }
+  .header {
+    background-color: white;
+    height:125px;
+}
+  .mobileMenu {
+    display: block;
+  }
+
+  .navLogo {
+    font-size: 20px;
+  }
+
+  .buyNetBtn, .langBtn {
+    display: none;
+  }
+
+
+  .menuLinks li {
+    font-size: 25px;
+  }
+
+ 
+}

@@ -1,0 +1,136 @@
+/* FirstSection.module.css */
+
+.section1 {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 5%;
+  align-items: start;
+  height: 100vh; /* Обеспечивает, что блок будет занимать весь экран */
+  background-image: url('/background.png');
+  background-size: cover; 
+  color: white;
+  margin-bottom: 5vh;
+
+}
+
+.mainContainer {
+  max-width: 70%;
+  font-family: LT Wave;
+  padding: 40px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6); /* Прозрачный черный фон для основного контейнера */
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.tableContainer {
+  background-color: rgba(0, 0, 0, 0.7); /* Прозрачный черный фон для контента */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.saleTitle {
+  font-size: 2rem;
+  color: #ffcc00; /* Яркий желтый для выделения */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.countdown div {
+  text-align: center;
+}
+
+.countdown span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffcc00; /* Желтый для цифр */
+}
+
+.countdown p {
+  font-size: 1rem;
+  color: white;
+}
+
+.progressSection {
+  margin-top: 20px;
+}
+
+.ethRaised {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.progressBar {
+  width: 100%;
+  height: 10px;
+  background-color: #444;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: #4caf50; /* Зеленый для индикатора прогресса */
+}
+
+.dynamicPrice {
+  font-size: 1.2rem;
+  color: #ffcc00; /* Желтый цвет для динамической цены */
+  margin-top: 10px;
+}
+
+.stats {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.amountSection {
+  margin-top: 20px;
+}
+
+
+
+.buttonSection {
+  margin-top: 10px;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+button {
+  background-color: #ffcc00; /* Яркий желтый для кнопок */
+  color: #333;
+  border: none;
+  padding: 2px 20px;
+  font-size: 1.1rem;
+  font-family: LT Wave;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  min-width: 140px; /* Фиксированная ширина кнопок */
+}
+
+button:hover {
+  background-color: #e6b800; /* Темнее желтый при наведении */
+}
+
+button:active {
+  background-color: #cc9900; /* Еще темнее желтый при нажатии */
+}
+
+.connectionStatus {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #f44336; /* Красный для ошибок */
+}
+

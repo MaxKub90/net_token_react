@@ -1,0 +1,237 @@
+/* Стиль для первого заголовка ROADMAP с рамкой вокруг "RO" */
+.roadmapWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .roadmapFrame {
+    margin-right: -105px; /* отступ от рамки к "RO" */
+    height: clamp(80px, 6.17vw, 120px); 
+
+  }
+  
+  .roadmapText {
+    font-family: 'LT Wave';
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(60px, 4.17vw, 80px); 
+    text-align: center;
+    color: #000000;
+  }
+  
+  /* Стиль для второго заголовка ROADMAP */
+  .roadmapTextSecond {
+    font-family: 'LT Wave';
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(40px, 4.17vw, 80px); 
+    text-align: center;
+    color: #FFC33E;
+    margin-left: 620px;
+    margin-top: -40px;
+  }
+  
+  .highTable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width:94%; /* Ширина контейнера */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  
+
+  .tableFirstStep {
+    width: clamp(398px, 40%, 688px); /* Минимальная ширина 280px, адаптивная, максимальная 1200px */
+    height: clamp(152px, 100%, 234px); /* Минимальная высота 250px, адаптивная, максимальная 450px */
+    border: 3px solid #000;
+    border-radius: 15px;
+    overflow: hidden;
+ 
+  }
+  
+  /* Блок staking */
+  .tableThirdStep {
+    width: clamp(342px, 28%, 547px); /* Минимальная ширина 280px, адаптивная, максимальная 1200px */
+    height: clamp(99px, 100%, 342px);
+    border: 3px solid #000;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: -4vw;
+    margin-top: 6vh;
+    position: relative;
+  }
+  
+  /* Блок staking */
+  .tableSecondStep {
+    width: clamp(197px,30%, 547px); /* Минимальная ширина 280px, адаптивная, максимальная 1200px */
+    height: clamp(129px, 100%, 398px);
+    border: 3px solid #000;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left:-3vw;
+    position: relative;
+  }
+  
+  .tableContent {
+    background-color: #fff; /* Фон белый */
+    font-family: LT Wave;
+    color:black;
+    font-size: clamp(17px, 1.35vw, 26px);
+    font-weight: 300;
+    display: flex; /* Flexbox для организации */
+    flex-direction: column; /* Вертикальное направление */
+    justify-content: flex-start; /* Центрирование по вертикали */
+    align-items: flex-start; /* Выровнять содержимое влево */
+    text-align: left; /* Текст выровнен влево */
+    box-sizing: border-box; /* Учитывать padding в ширине */
+    padding: 3%; /* Отступ внутри */
+}
+
+
+  .tableContent2 {
+    font-family: LT Wave;
+    color:black;
+    font-size: clamp(25px, 2vw, 70px);
+    font-weight: 300;
+    text-align: center;
+    padding: 7%;
+    
+  }
+
+  .tableHeader {
+    display: flex; /* Используем Flexbox */
+    justify-content: space-between; /* Элементы по краям */
+    align-items: center; /* Вертикальное центрирование */
+    padding: 0% 12px; /* Отступы сверху и по бокам */
+    background-color: #fff; /* Белый фон */
+    border-bottom: 15px solid #000; /* Полоска снизу */
+  }
+
+  .tableTitle {
+    /* Memecoin */
+    font-family: 'LT Wave';
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(20px, 1.67vw, 40px);
+    text-align: center;
+    color: #000000;
+  }
+
+  .tableLeftIcons, .tableRightIcons {
+    display: flex;
+    justify-content: start;
+    gap: 10px; /* Промежуток между иконками */
+  }
+
+.plusIcon svg {
+  align-items: center;
+  width: clamp(17px, 1.7vw, 32px); 
+}
+
+.dotsIcon svg {
+  align-items: center;
+  height: 2.2vh;
+  width: clamp(18px, 1.3vw, 32px); 
+}
+
+.tableIcon svg {
+  align-items: center;
+  width: clamp(22px, 1.7vw, 32px); 
+  margin-left: 0.5vw;
+}
+  .tableError {
+    width: clamp(197px, 100%, 547px); /* Минимальная ширина 280px, адаптивная, максимальная 1200px */
+    height: clamp(113px, 100%, 284px);
+    border: 3px solid #000;
+    border-radius: 15px; /* Закругленные углы */
+    overflow: hidden; /* Скрытие лишнего содержимого */
+    position: relative;
+  
+  }
+  
+  .mainerror
+  { 
+    width:88%;
+    padding: 0 3%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden; /* Скрытие лишнего содержимого */
+    position: relative;
+    margin-bottom: 5vh;
+  }
+
+  @media (max-width: 768px) {
+    .highTable  {
+      flex-direction: column;
+      align-items: flex-start; /* Выровнять элементы по левому краю */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      gap:2vh;
+      width: 88%; /* Ширина контейнера */
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+
+    .tableFirstStep {
+      width: 100%; /* Минимальная высота 250px, адаптивная, максимальная 450px */
+      border: 3px solid #000;
+      border-radius: 15px;
+      overflow: hidden;
+   
+    }
+    
+    /* Блок staking */
+    .tableThirdStep {
+      width: clamp(342px, 28%, 547px); /* Минимальная ширина 280px, адаптивная, максимальная 1200px */
+      height: clamp(99px, 100%, 342px);
+      border: 3px solid #000;
+      border-radius: 15px;
+      overflow: hidden;
+      margin-left: -4vw;
+      margin-top: -4vh;
+      position: relative;
+    }
+    
+
+    .tableSecondStep {
+      width: 90%;
+      border: 3px solid #000;
+      border-radius: 15px;
+      overflow: hidden;
+      margin-left:-4vw;
+      position: relative;
+    }
+    
+    .tableError {
+      width: 76%;
+      border: 3px solid #000;
+      border-radius: 15px; /* Закругленные углы */
+      position: relative;
+    } 
+
+    .mainerror
+    { 
+      margin-top: -4vh;
+      margin-left: -4.5vw;
+
+
+    }
+    
+    .tableContent {
+      line-height: 1.5;
+  }
+  }
+
+  @media (max-width: 768px) {
+    .roadmapTextSecond {
+      margin-right: -20%; /* Сбросим сдвиг для маленьких экранов */
+      margin-bottom: 20px;
+    }
+  }

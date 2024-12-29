@@ -1,0 +1,16 @@
+.buyButton {
+    background: linear-gradient(90deg, #000, #555);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .buyButton:hover {
+    background: linear-gradient(90deg, #555, #000);
+    transform: scale(1.05);
+  }
+  
