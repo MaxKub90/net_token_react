@@ -100,13 +100,14 @@ const NetStaking: React.FC = () => {
           </div>
         </div>
         <div className={styles.mainPics}>
-          <div className={styles.graph}>
-            <img src="public/totalsupply.png" alt="Staking Chart" />
-          </div>
-          <div className={styles.growpic}>
-            <img src="public/stakingpagepic.png" alt="Growth Illustration" />
-          </div>
-        </div>
+  <div className={styles.graph}>
+    <img src="/totalsupply.png" alt="сhart" />
+  </div>
+  <div className={styles.growpic}>
+    <img src="/stakingpagepic.png" alt="growth" />
+  </div>
+</div>
+
       </div>
 
       {/* Popup */}
