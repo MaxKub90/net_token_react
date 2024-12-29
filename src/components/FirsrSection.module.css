@@ -14,18 +14,16 @@
 }
 
 .mainContainer {
-  max-width: 70%;
+  max-width: 80%;
   font-family: LT Wave;
-  padding: 40px;
+  padding: 7%;
   text-align: center;
-  background: rgba(0, 0, 0, 0.6); /* Прозрачный черный фон для основного контейнера */
   border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .tableContainer {
   background-color: rgba(0, 0, 0, 0.7); /* Прозрачный черный фон для контента */
-  padding: 40px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }

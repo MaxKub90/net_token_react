@@ -28,8 +28,8 @@
     font-size: clamp(40px, 4.17vw, 80px); 
     text-align: center;
     color: #FFC33E;
-    margin-left: 620px;
-    margin-top: -40px;
+
+    margin-top: -20px;
   }
   
   .highTable {
@@ -231,7 +231,7 @@
 
   @media (max-width: 768px) {
     .roadmapTextSecond {
-      margin-right: -20%; /* Сбросим сдвиг для маленьких экранов */
+      margin-left: 20%; /* Сбросим сдвиг для маленьких экранов */
       margin-bottom: 20px;
     }
   }

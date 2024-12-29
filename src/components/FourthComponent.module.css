@@ -595,11 +595,13 @@
 /*spider3 */
 .box-canvas {
   position: relative;
+  width:25%;
   margin: auto;
   display: flex;
   flex-direction: column; /* Вертикальное выравнивание */
   justify-content: flex-start; /* Прижимаем к верхней части */
-  transform: scale(0.7);
+  transform: scale(0.6);
+  
 }
 
 .inner {
@@ -893,6 +895,7 @@
   }
  
 }
+
 
 
 @media (max-width: 768px) {
