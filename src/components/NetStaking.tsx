@@ -101,10 +101,10 @@ const NetStaking: React.FC = () => {
         </div>
         <div className={styles.mainPics}>
           <div className={styles.graph}>
-            <img src="public/TotalSupply.png" alt="Staking Chart" />
+            <img src="public/totalsupply.png" alt="Staking Chart" />
           </div>
           <div className={styles.growpic}>
-            <img src="public/StakingPagePic.png" alt="Growth Illustration" />
+            <img src="public/stakingpagepic.png" alt="Growth Illustration" />
           </div>
         </div>
       </div>
